@@ -31,7 +31,12 @@ output * bg #232836 solid_color
 font pango:Cascadia Code 10
 
 # Gaps & Border
-gaps inner 15
+#gaps inner 15
+gaps top 0
+gaps left 10
+gaps bottom 10
+gaps right 10
+gaps inner 10
 default_border pixel 4
 
 # Window decoration
@@ -72,6 +77,7 @@ exec {
     swaylock -f
     wmname LG3D
     wlsunset -l 52.52 -L 13.405
+    udiskie
 }
 ### Input configuration
 #
@@ -212,6 +218,9 @@ bindsym $mod+x exec ~/.config/waybar/scripts/powerctrl.sh
 
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
+
+    # Global fullscreen
+    bindsym $mod+Shift+f fullscreen global
 
     # Toggle the current focus between tiling and floating mode
     bindsym $mod+Shift+space floating toggle
