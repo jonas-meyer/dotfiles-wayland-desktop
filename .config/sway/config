@@ -66,7 +66,7 @@ set $locker 'swaylock -f'
  exec swayidle -w \
           timeout 300 $locker \
           timeout 600 'swaymsg "output * dpms off"' \
-	  timeout 15 'if pgrep swaylock; then swaymsg "output * dpms off"; fi' \
+          timeout 15 'if pgrep swaylock; then swaymsg "output * dpms off"; fi' \
           resume 'swaymsg "output * dpms on"' \
           before-sleep $locker
 
@@ -75,6 +75,7 @@ set $locker 'swaylock -f'
 # resumed. It will also lock your screen before your computer goes to sleep.
 exec {
     swaylock -f
+    /usr/bin/lxpolkit
     wmname LG3D
     wlsunset -l 52.52 -L 13.405
     udiskie
@@ -165,7 +166,6 @@ bindsym $mod+x exec ~/.config/waybar/scripts/powerctrl.sh
     set $mon3 HDMI-A-1
     set $mon1 DP-1
     set $mon2 DP-2
-
     workspace 1 output $mon1
     workspace 2 output $mon1
     workspace 3 output $mon1
@@ -283,9 +283,5 @@ exec_always ~/.config/sway/scripts/import-gsettings.sh \
     cursor-theme:gtk-cursor-theme-name
 #
 set $gnome-schema org.gnome.desktop.interface
-
-
-
-
 
 include /etc/sway/config.d/*

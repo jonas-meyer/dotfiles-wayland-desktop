@@ -91,17 +91,17 @@ set gdefault "imply global for new searches
 """""""""""""
 
 " When auto-indenting, use the indenting format of the previous line
-set copyindent
+"set copyindent
 " When on, a <Tab> in front of a line inserts blanks according to 'shiftwidth'.
 " 'tabstop' is used in other places. A <BS> will delete a 'shiftwidth' worth of
 " space at the start of the line.
-set smarttab
+"set smarttab
 " Copy indent from current line when starting a new line (typing <CR> in Insert
 " mode or when using the "o" or "O" command)
-set autoindent
+"set autoindent
 " Automatically inserts one extra level of indentation in some cases, and works
 " for C-like files
-set smartindent
+"set smartindent
 
 """""""""
 " Theme "
@@ -119,3 +119,4 @@ colorscheme nord
 xnoremap "+y y:call system("wl-copy", @")<cr>
 nnoremap "+p :let @"=substitute(system("wl-paste --no-newline"), '<C-v><C-m>', '', 'g')<cr>p
 nnoremap "*p :let @"=substitute(system("wl-paste --no-newline --primary"), '<C-v><C-m>', '', 'g')<cr>p
+nnoremap <nowait><silent> <C-L> :noh<CR>

@@ -112,6 +112,9 @@ export XDG_CURRENT_DESKTOP=unity
 export QT_QPA_PLATFORM=wayland
 export QT_QPA_PLATFORMTHEME=qt5ct
 DEFAULT_USER=$USER
-eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)
+#eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)
 export SSH_AUTH_SOCK
 export GPG_AGENT_INFO
+export EDITOR=vim
+export MOZ_DBUS_REMOTE=1
+export MOZ_ENABLE_WAYLAND=1
