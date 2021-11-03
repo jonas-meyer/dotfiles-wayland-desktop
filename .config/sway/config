@@ -107,7 +107,8 @@ bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 #Power menu
-bindsym $mod+x exec ~/.config/waybar/scripts/powerctrl.sh
+bindsym $mod+Shift+x exec ~/.config/waybar/scripts/powerctrl.sh
+bindsym $mod+x exec swaylock -f
 
 ### Key bindings
 #
