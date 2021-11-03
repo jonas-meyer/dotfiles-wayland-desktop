@@ -8,7 +8,8 @@
     // "width": 1280, // Waybar width
     "modules-left": ["sway/workspaces", "custom/spotify"],
     // "modules-center": ["sway/window"],
-    "modules-right": ["custom/border-left", "pulseaudio", "clock", "custom/border-right", "custom/powerctrl"],
+    "modules-right": ["custom/border-left", "pulseaudio", "clock",
+"idle_inhibitor", "custom/border-right", "custom/powerctrl"],
     
     // Workspaces
     "sway/workspaces": {
@@ -18,7 +19,8 @@
      
      // Spotify
 	"custom/spotify": {
-		"exec": "~/.config/waybar/scripts/mediaplayer.sh --player spotify",
+		"exec": "~/.config/waybar/scripts/mediaplayer.sh --player spotify
+firefox",
 		"format": " {}",
 		"return-type": "json",
 		"on-click": "playerctl play-pause",
@@ -163,5 +165,11 @@
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    }
 }
-
