@@ -8,7 +8,7 @@
     // "width": 1280, // Waybar width
     "modules-left": ["sway/workspaces", "custom/spotify"],
     // "modules-center": ["sway/window"],
-    "modules-right": ["custom/border-left", "pulseaudio", "clock",
+    "modules-right": ["custom/border-left","custom/pomo", "pulseaudio", "clock",
 "idle_inhibitor", "custom/border-right", "custom/powerctrl"],
     
     // Workspaces
@@ -16,6 +16,12 @@
          "disable-scroll": true,
          "all-outputs": false,
      },
+
+    // Pomodoro
+    "custom/pomo": {
+        "exec": "pomo status",
+        "interval": 5
+    },
      
      // Spotify
 	"custom/spotify": {

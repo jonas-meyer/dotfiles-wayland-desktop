@@ -118,3 +118,5 @@ export GPG_AGENT_INFO
 export EDITOR=vim
 export MOZ_DBUS_REMOTE=1
 export MOZ_ENABLE_WAYLAND=1
+export TERMINAL=foot
+export TERM=foot

@@ -14,11 +14,14 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term alacritty
+set $term foot
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | dmenu | xargs swaymsg exec --
+#set $menu dmenu_path | dmenu | xargs swaymsg exec --
+for_window [app_id="^launcher$"] floating enable, sticky enable, resize set 30 ppt 60 ppt, border pixel 10
+set $menu exec $term --app-id=launcher -e sway-launcher-desktop
+bindsym $mod+d exec $menu
 
 ### Output configuration
 #
@@ -38,6 +41,7 @@ gaps bottom 10
 gaps right 10
 gaps inner 10
 default_border pixel 4
+smart_borders on
 
 # Window decoration
 # class                 border  backgr. text    indicator child_border
@@ -80,7 +84,7 @@ exec {
     wl-paste -t text --watch clipman store --no-persist
     wlsunset -l 52.52 -L 13.405
     udiskie
-    bitwarden
+    bitwarden-desktop
 }
 
 for_window [class="Bitwarden"] move scratchpad
@@ -125,7 +129,7 @@ bindsym $mod+x exec swaylock -f
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec wofi -S drun
+    #bindsym $mod+d exec wofi -S drun
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
