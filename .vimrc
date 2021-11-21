@@ -5,7 +5,7 @@
 " disable vi compatibility
 set nocompatible
 
-set term=alacritty
+set term=foot
 set ttymouse=sgr
 
 " automatically load changed files
