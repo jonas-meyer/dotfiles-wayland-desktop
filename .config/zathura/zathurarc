@@ -6,8 +6,12 @@ set guioptions none
 set page-padding 5
 set selection-clipboard clipboard
 
-set adjust-open "width"
+set adjust-open "height"
 set default-fg "#FFFFFF"
 set default-bg rgba(39,44,54,0.9)
 set recolor-darkcolor "#FFFFFF"
 set recolor-lightcolor rgba(39,44,54,0.0)
+set recolor true
+
+map <Space> navigate next
+map <Shift-Space> navigate previous

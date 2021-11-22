@@ -85,7 +85,6 @@ exec {
     wl-paste -p -t text --watch clipman store -P --histpath="~/.local/share/clipman-primary.json"
     wlsunset -l 52.52 -L 13.405
     udiskie
-    bitwarden-desktop
 }
 
 for_window [class="Bitwarden"] move scratchpad
