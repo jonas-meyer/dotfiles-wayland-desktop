@@ -8,7 +8,7 @@
     // "width": 1280, // Waybar width
     "modules-left": ["sway/workspaces", "custom/spotify"],
     // "modules-center": ["sway/window"],
-    "modules-right": ["custom/border-left","custom/pomo", "pulseaudio", "clock",
+    "modules-right": ["custom/border-left", "custom/weather", "pulseaudio", "clock",
 "idle_inhibitor", "custom/border-right", "custom/powerctrl"],
     
     // Workspaces
@@ -21,6 +21,14 @@
     "custom/pomo": {
         "exec": "pomo status",
         "interval": 5
+    },
+
+    "custom/weather" : {
+        "format": "{}",
+        "tooltip": true,
+        "interval": 3600,
+        "exec": "~/.config/waybar/scripts/waybar-wttr.py",
+        "return-type": "json"
     },
      
      // Spotify
