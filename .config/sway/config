@@ -20,7 +20,7 @@ set $term foot
 # on the original workspace that the command was run on.
 #set $menu dmenu_path | dmenu | xargs swaymsg exec --
 for_window [app_id="^launcher$"] floating enable, sticky enable, resize set 30 ppt 60 ppt, border pixel 10
-set $menu exec $term --app-id=launcher -e sway-launcher-desktop
+set $menu exec fuzzel -b 2e3440ff -T "foot -e" -C d6b692ff -B 4 -t ffffffff -s d6b692ff -S ffffffff -f CascadiaCode:size=14 -I
 bindsym $mod+d exec $menu
 
 ### Output configuration
@@ -81,13 +81,14 @@ exec {
     swaylock -f
     /usr/bin/lxpolkit
     wmname LG3D
-    wl-paste -t text --watch clipman store --no-persist
-    wl-paste -p -t text --watch clipman store -P --histpath="~/.local/share/clipman-primary.json"
+#    wl-paste -t text --watch clipman store --no-persist
+#    wl-paste -p -t text --watch clipman store -P --histpath="~/.local/share/clipman-primary.json"
     wlsunset -l 52.52 -L 13.405
     udiskie
 }
 
 for_window [class="Bitwarden"] move scratchpad
+for_window [shell=".*"] inhibit_idle fullscreen
 ### Input configuration
 #
 # Example configuration:
