@@ -6,6 +6,7 @@
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     //"height": 15, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
+    "ipc": true,
     "modules-left": ["sway/workspaces", "custom/spotify"],
     // "modules-center": ["sway/window"],
     "modules-right": ["custom/border-left", "custom/weather", "pulseaudio", "clock",
