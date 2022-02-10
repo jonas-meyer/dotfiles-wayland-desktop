@@ -34,6 +34,7 @@ window#waybar.chromium {
     padding: 10px;
     background-color: #30374b;
     color: #ffffff;
+    border: 3px solid #d6b692;
     border-radius: 50px;
     margin: 10px 0px 10px 10px;
 }
@@ -58,6 +59,7 @@ window#waybar.chromium {
     color: #d6b692;
     font-size: 12px;
     border-radius: 50px;
+    border: 3px solid #d6b692;
 }
 
 #custom-powerctrl {
@@ -67,6 +69,7 @@ window#waybar.chromium {
 	background-color: #30374b;
 	color: #d6b692;
 	font-size: 16px;
+    border: 3px solid #d6b692;
 }
 
 /* Border Radius */
@@ -77,6 +80,9 @@ window#waybar.chromium {
 	margin: 10px 0px 10px 0px;
 	border-top-left-radius: 50px;
 	border-bottom-left-radius: 50px;
+    border-left: 3px solid #d6b692;
+    border-top: 3px solid #d6b692;
+    border-bottom: 3px solid #d6b692;
 }
 
 #custom-border-right {
@@ -85,6 +91,9 @@ window#waybar.chromium {
 	margin: 10px 10px 10px 0;
 	border-top-right-radius: 50px;
 	border-bottom-right-radius: 50px;
+    border-right: 3px solid #d6b692;
+    border-top: 3px solid #d6b692;
+    border-bottom: 3px solid #d6b692;
 }
 
 #custom-spacing {
@@ -118,6 +127,8 @@ window#waybar.chromium {
     margin: 10px 0 10px 0;
     color: #ffffff;
     background-color: #30374b;
+    border-top: 3px solid #d6b692;
+    border-bottom: 3px solid #d6b692;
 }
 
 #window,

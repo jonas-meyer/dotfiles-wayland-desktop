@@ -14,7 +14,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term foot
+set $term footclient
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -35,13 +35,14 @@ font pango:Cascadia Code 10
 
 # Gaps & Border
 #gaps inner 15
-gaps top 0
-gaps left 10
-gaps bottom 10
-gaps right 10
-gaps inner 10
+#gaps top 0
+#gaps left 10
+#gaps bottom 10
+#gaps right 10
+gaps inner 15
 default_border pixel 4
 smart_borders on
+smart_gaps on
 
 # Window decoration
 # class                 border  backgr. text    indicator child_border
@@ -85,6 +86,7 @@ exec {
 #    wl-paste -p -t text --watch clipman store -P --histpath="~/.local/share/clipman-primary.json"
     wlsunset -l 52.52 -L 13.405
     udiskie
+    foot --server
 }
 
 for_window [class="Bitwarden"] move scratchpad

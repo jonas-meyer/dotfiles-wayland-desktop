@@ -115,8 +115,11 @@ DEFAULT_USER=$USER
 #eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)
 export SSH_AUTH_SOCK
 export GPG_AGENT_INFO
-export EDITOR=vim
 export MOZ_DBUS_REMOTE=1
 export MOZ_ENABLE_WAYLAND=1
 export TERMINAL=foot
 export TERM=foot
+export VISUAL=vim
+export EDITOR="$VISUAL"
+export SYSTEMC_HOME="/home/jomo/systemc-2.3.3/"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/home/jomo/systemc-2.3.3/lib-linux64"
