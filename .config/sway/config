@@ -91,6 +91,10 @@ exec {
 
 for_window [class="Bitwarden"] move scratchpad
 for_window [shell=".*"] inhibit_idle fullscreen
+for_window {
+    [window_role="(pop-up|bubble|dialog)"] floating enable
+}
+for_window [title="Figure*"] floating enable
 ### Input configuration
 #
 # Example configuration:
