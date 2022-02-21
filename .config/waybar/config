@@ -34,9 +34,8 @@
      
      // Spotify
 	"custom/spotify": {
-		"exec": "~/.config/waybar/scripts/mediaplayer.sh --player spotify
-firefox",
-		"format": " {}",
+		"exec": "~/.config/waybar/scripts/mediaplayer.sh --player mpv",
+		"format": "{}",
 		"return-type": "json",
 		"on-click": "playerctl play-pause",
 		"on-scroll-up": "playerctl next",

@@ -94,7 +94,7 @@ for_window [shell=".*"] inhibit_idle fullscreen
 for_window {
     [window_role="(pop-up|bubble|dialog)"] floating enable
 }
-for_window [title="Figure*"] floating enable
+for_window [title="Figure*|guiTest"] floating enable
 ### Input configuration
 #
 # Example configuration:

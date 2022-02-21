@@ -52,7 +52,7 @@ window#waybar.chromium {
 }
 
 /* Spotify */
-.custom-spotify {
+#custom-spotify {
     padding: 10px;
     margin: 10px 0 10px 15px;
     background-color: #30374b;
