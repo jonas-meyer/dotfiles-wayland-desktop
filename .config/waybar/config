@@ -9,7 +9,7 @@
     "ipc": true,
     "modules-left": ["sway/workspaces", "custom/spotify"],
     // "modules-center": ["sway/window"],
-    "modules-right": ["custom/border-left", "custom/weather", "pulseaudio", "clock",
+    "modules-right": ["custom/border-left", "custom/weather", "cpu", "memory", "pulseaudio", "clock",
 "idle_inhibitor", "custom/border-right", "custom/powerctrl"],
     
     // Workspaces
