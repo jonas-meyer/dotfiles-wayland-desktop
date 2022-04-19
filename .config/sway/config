@@ -303,5 +303,5 @@ exec_always ~/.config/sway/scripts/import-gsettings.sh \
     cursor-theme:gtk-cursor-theme-name
 #
 set $gnome-schema org.gnome.desktop.interface
-
+for_window [title="Firefox — Sharing Indicator"] floating enable; move scratchpad
 include /etc/sway/config.d/*
