@@ -46,10 +46,12 @@ smart_gaps on
 
 # Window decoration
 # class                 border  backgr. text    indicator child_border
-client.focused          #d6b692 #262626 #f0f0f0 #9ec3c4   #d6b692
-client.focused_inactive #d6b692 #262626 #f0f0f0 #9ec3c4   #d6b692
-client.unfocused        #d6b692 #0f0f0f #f0f0f0 #9ec3c4   #4c4c4c
+client.focused          #4C566A #4C566A #f0f0f0 #9ec3c4   #d6b692
+client.focused_inactive #4C566A #4C566A #f0f0f0 #9ec3c4   #d6b692
+client.unfocused        #2E3440 #2E3440 #f0f0f0 #9ec3c4   #4c4c4c
 client.urgent           #d6b692 #c49ec4 #0f0f0f #9ec3c4   #c49ec4
+
+title_align center
 
 #
 # Example configuration:
